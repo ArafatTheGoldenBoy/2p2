@@ -11,58 +11,27 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
+<script rel="javascript" src="js/jquery.waypoints.min.js"></script>
+<script rel="javascript" src="js/jquery.counterup.min.js"></script>
+<script rel="javascript" src="js/custom.js"></script>
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
- /* color: #777; */ 
-  line-height: 1.8;
-}
-
-#cus-fonts1{
-  font-size: 10vw;
-}
-#cus-fonts2{
-  font-size: 3vw;
-}
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('images/Open-Data_1366.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("images/Open2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("images/Open2.jpg");
-  min-height: 400px;
-}
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
+ /* First image (Logo. Full height) */
+ .bgimg-1 {
+    background-image: url('images/Open-Data_1366.jpg');
+    min-height: 100%;
+  }
+  
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("images/Open2.jpg");
     min-height: 400px;
   }
-}
+  
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("images/Open2.jpg");
+    min-height: 400px;
+  }
 </style>
 <body>
 <!-- Navbar (sit on top) -->
@@ -85,8 +54,12 @@ body, html {
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#feature">Feature</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
-              </li>
+            </li>
+              
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -107,25 +80,9 @@ body, html {
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT US</h3>
- <!-- <p class="w3-center"><em>I love photography</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
   <div class="w3-row">
-    <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p align="justify">Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-
-    <div class="w3-col m6 w3-center w3-padding-large">
-        <p><b><i class="fa fa-user w3-margin-right"></i>Engr Abdul Kayum</b></p><br>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1879930485378112%26set%3Da.150272498343928%26type%3D3&width=500" width="333" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-      </div>
-  
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+      <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
   
   <!-- progressbar1-->
   <div>
@@ -156,6 +113,15 @@ body, html {
     </div>
   </div>
   <!--End progressbar3-->
+    </div>
+
+    <div class="w3-col m6 w3-center w3-padding-large">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Engr Abdul Kayum</b></p><br>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1879930485378112%26set%3Da.150272498343928%26type%3D3&width=500" width="333" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+  
+  </div>
+  
   <br>
   <br>
 
@@ -167,50 +133,76 @@ body, html {
   
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p align="justify" >Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+        <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  
+  <!-- progressbar1-->
+  <div>
+    <div class="w3-wide"><i class="fa fa-laptop"></i>DOT NET</div>
+    <div style="padding-left:45%">85%</div>
+    <div class="progress" style="height:1px">
+      <div class="progress-bar" style="width:85%;height:1px"></div>
     </div>
-    <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-    
-    <!-- progressbar1-->
+  </div>
+  <!--End progressbar1-->
+  <br>
+    <!-- progressbar2-->
     <div>
-      <div class="w3-wide"><i class="fa fa-laptop"></i>DOT NET</div>
-      <div style="padding-left:45%">85%</div>
+      <div class="w3-wide"><i class="fa fa-laptop"></i>PHP</div>
+      <div style="padding-left:35%">70%</div>
       <div class="progress" style="height:1px">
-        <div class="progress-bar" style="width:85%;height:1px"></div>
+        <div class="progress-bar" style="width:70%;height:1px"></div>
       </div>
     </div>
-    <!--End progressbar1-->
+    <!--End progressbar2-->
     <br>
-      <!-- progressbar2-->
-      <div>
-        <div class="w3-wide"><i class="fa fa-laptop"></i>PHP</div>
-        <div style="padding-left:35%">70%</div>
-        <div class="progress" style="height:1px">
-          <div class="progress-bar" style="width:70%;height:1px"></div>
-        </div>
-      </div>
-      <!--End progressbar2-->
-      <br>
-        <!-- progressbar3-->
-    <div>
-      <div class="w3-wide"><i class="fa fa-laptop"></i>ANDROID</div>
-      <div style="padding-left:50%">90%</div>
-      <div class="progress" style="height:1px">
-        <div class="progress-bar" style="width:90%;height:1px"></div>
+      <!-- progressbar3-->
+  <div>
+    <div class="w3-wide"><i class="fa fa-laptop"></i>ANDROID</div>
+    <div style="padding-left:50%">90%</div>
+    <div class="progress" style="height:1px">
+      <div class="progress-bar" style="width:90%;height:1px"></div>
+    </div>
+  </div>
+  <!--End progressbar3-->
       </div>
     </div>
-    <!--End progressbar3-->
+    
     <br>
     <br>
     <div class="w3-row">
         <!-- Hide this text on small devices -->
         <div class="w3-col m6 w3-hide-small w3-padding-large">
-          <p align="justify" >Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  
+  <!-- progressbar1-->
+  <div>
+    <div class="w3-wide"><i class="fa fa-laptop"></i>DOT NET</div>
+    <div style="padding-left:45%">85%</div>
+    <div class="progress" style="height:1px">
+      <div class="progress-bar" style="width:85%;height:1px"></div>
+    </div>
+  </div>
+  <!--End progressbar1-->
+  <br>
+    <!-- progressbar2-->
+    <div>
+      <div class="w3-wide"><i class="fa fa-laptop"></i>PHP</div>
+      <div style="padding-left:35%">70%</div>
+      <div class="progress" style="height:1px">
+        <div class="progress-bar" style="width:70%;height:1px"></div>
+      </div>
+    </div>
+    <!--End progressbar2-->
+    <br>
+      <!-- progressbar3-->
+  <div>
+    <div class="w3-wide"><i class="fa fa-laptop"></i>ANDROID</div>
+    <div style="padding-left:50%">90%</div>
+    <div class="progress" style="height:1px">
+      <div class="progress-bar" style="width:90%;height:1px"></div>
+    </div>
+  </div>
+  <!--End progressbar3-->
         </div>
 
         <div class="w3-col m6 w3-center w3-padding-large">
@@ -218,38 +210,8 @@ body, html {
             <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D2119734091448406%26set%3Da.104322559656246%26type%3D3&width=500" width="333" height="333" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
           </div>
       
-      </div>
-      <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
       
-      <!-- progressbar1-->
-      <div>
-        <div class="w3-wide"><i class="fa fa-laptop"></i>DOT NET</div>
-        <div style="padding-left:45%">85%</div>
-        <div class="progress" style="height:1px">
-          <div class="progress-bar" style="width:85%;height:1px"></div>
-        </div>
       </div>
-      <!--End progressbar1-->
-      <br>
-        <!-- progressbar2-->
-        <div>
-          <div class="w3-wide"><i class="fa fa-laptop"></i>PHP</div>
-          <div style="padding-left:35%">70%</div>
-          <div class="progress" style="height:1px">
-            <div class="progress-bar" style="width:70%;height:1px"></div>
-          </div>
-        </div>
-        <!--End progressbar2-->
-        <br>
-          <!-- progressbar3-->
-      <div>
-        <div class="w3-wide"><i class="fa fa-laptop"></i>ANDROID</div>
-        <div style="padding-left:50%">90%</div>
-        <div class="progress" style="height:1px">
-          <div class="progress-bar" style="width:90%;height:1px"></div>
-        </div>
-      </div>
-      <!--End progressbar3-->
 <br>
 <br>
       <div class="w3-row">
@@ -260,40 +222,41 @@ body, html {
       
           <!-- Hide this text on small devices -->
           <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <p><p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  
+            <!-- progressbar1-->
+            <div>
+              <div class="w3-wide"><i class="fa fa-laptop"></i>DOT NET</div>
+              <div style="padding-left:45%">85%</div>
+              <div class="progress" style="height:1px">
+                <div class="progress-bar" style="width:85%;height:1px"></div>
+              </div>
+            </div>
+            <!--End progressbar1-->
+            <br>
+              <!-- progressbar2-->
+              <div>
+                <div class="w3-wide"><i class="fa fa-laptop"></i>PHP</div>
+                <div style="padding-left:35%">70%</div>
+                <div class="progress" style="height:1px">
+                  <div class="progress-bar" style="width:70%;height:1px"></div>
+                </div>
+              </div>
+              <!--End progressbar2-->
+              <br>
+                <!-- progressbar3-->
+            <div>
+              <div class="w3-wide"><i class="fa fa-laptop"></i>ANDROID</div>
+              <div style="padding-left:50%">90%</div>
+              <div class="progress" style="height:1px">
+                <div class="progress-bar" style="width:90%;height:1px"></div>
+              </div>
+            </div>
+            <!--End progressbar3--></p>
             <p align="justify">My name is Yasin Arafat. My father name is Abul Kalam Azad and my mother name is Hasina Begum. I am 24 years old. Recently, I gradueted from Daffodil International University in BSc in Computer Science and Engeneering in january,2018. By the way, My favourite things is playing games. During playing games, I made friends. I always try to make them happy and support them fully. They also helped me lots of different way. I am really happy to play games with them. I also play Football video games. It's really enjoyble. When I played with my favourite player, that's make me happy. Besides, I am trying to go abord for post gradueted. Please, prey for my family, friend and me. I will also try my best to help others who deserve better.</p>
           </div>
         </div>
-        <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
         
-        <!-- progressbar1-->
-        <div>
-          <div class="w3-wide"><i class="fa fa-laptop"></i>DOT NET</div>
-          <div style="padding-left:45%">85%</div>
-          <div class="progress" style="height:1px">
-            <div class="progress-bar" style="width:85%;height:1px"></div>
-          </div>
-        </div>
-        <!--End progressbar1-->
-        <br>
-          <!-- progressbar2-->
-          <div>
-            <div class="w3-wide"><i class="fa fa-laptop"></i>PHP</div>
-            <div style="padding-left:35%">70%</div>
-            <div class="progress" style="height:1px">
-              <div class="progress-bar" style="width:70%;height:1px"></div>
-            </div>
-          </div>
-          <!--End progressbar2-->
-          <br>
-            <!-- progressbar3-->
-        <div>
-          <div class="w3-wide"><i class="fa fa-laptop"></i>ANDROID</div>
-          <div style="padding-left:50%">90%</div>
-          <div class="progress" style="height:1px">
-            <div class="progress-bar" style="width:90%;height:1px"></div>
-          </div>
-        </div>
-        <!--End progressbar3-->
 </div>
 <!--End Container (About Section) -->
 
@@ -343,7 +306,7 @@ body, html {
   </div>
 </div>
 
-<div class="container">
+<div class="container" id="feature">
   <h4> Feature </h4>
   <div class="row">
       <div class="col-md-12">
@@ -460,17 +423,19 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p> &copy; 2019 Design and Developed by P2P IT & Co.</p>
+  <p class="glow"> &copy; 2019 Design and Developed by 2P2 IT & Co.</p>
 </footer>
- 
+
 <script>
 // animation for numerical number
 jQuery(document).ready(function( $ ) {
         $('.counter').counterUp({
-            delay: 10,
+            delay: 50,
             time: 1000
         });
     });
+
+
 </script>
 </body>
 </html>
