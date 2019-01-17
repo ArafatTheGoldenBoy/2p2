@@ -43,7 +43,21 @@
 <body>
 <!-- Navbar (sit on top) -->
 <div>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <header>
+    <div  class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex text-center h-100">
+          <div class="my-auto w-100 text-white">
+            <h1 class="display-3">2P2 IT & Co.</h1>
+            <h2></h2>
+          </div>
+        </div>
+    </div>
+  </header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id= "navexample">
         <a class="navbar-brand" href="#"><img src="images/p2plogo.png" alt="p2plogo" width="150" height="70"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -52,7 +66,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About Us</a>
@@ -68,8 +82,8 @@
             </li>
               
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <form class="form-inline my-2 my-lg-0" action="p2p.html">
+            <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
@@ -77,12 +91,6 @@
 </div>
 
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1" id="home">
-  <div class="" >
-    <span class="center padding-large black xlarge wide animate-opacity">P2P IT & Co.</span>
-  </div>
-</div>
 
 <!-- Container (About Section) -->
 
@@ -527,8 +535,14 @@ jQuery(document).ready(function( $ ) {
             time: 1000
         });
     });
-
-
+    jQuery(document).ready(function( $ ) {
+    $(window).on('scroll', function(event) {
+    var scrollValue = $(window).scrollTop();
+    if (scrollValue == settings.scrollTopPx || scrollValue > 70) {
+         $('.navbar').addClass('fixed-top');
+    } 
+  });
+});
 </script>
 </body>
 </html>
