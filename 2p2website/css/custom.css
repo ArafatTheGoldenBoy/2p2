@@ -59,3 +59,146 @@ h4{text-align:center;margin:30px 0;color:#444}
 .main-timeline .timeline-content:before,.main-timeline .timeline:nth-child(2n) .timeline-content:before{left:99px}
 .main-timeline .timeline-content:after,.main-timeline .timeline:nth-child(2n) .timeline-content:after{left:65px}
 }
+
+
+
+
+
+/* jahangir */
+
+
+a {
+  text-decoration: none !important;
+}
+body {
+    font-size: 1.4rem;
+    
+  }
+  
+  /* =14px */
+  
+  /* =24px */
+  .container__item {
+    margin: 0 auto 40px;
+    
+  }
+  
+  .content__wrapper {
+    
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+  }
+  
+  .about{
+    font-size: 44px;
+    font-family:fantasy;
+    padding:50px 0px 50px 0px;
+  }
+
+  hr{
+    
+    background-color: #86d6c2;
+    height: 2px;
+  }
+
+  /*progressbar color*/
+  .clr{
+    background-color:#adbea6;
+  }
+  /*progressbar color end*/
+
+   /*Yasin's moving circle*/
+
+   .ellipses-containeryasin{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: relative;
+    background-image: url('../images/yasin1.jpg');
+    transform: rotateX(90);
+    background-size: cover;
+  }
+
+  .ellipses__outer--thickyasin {
+    width: 100%;
+    height: 100%;
+    border-color: rgb(243, 239, 7) transparent;
+    border-width: 2px;
+            animation: ellipsesRotate 25s ease-in-out infinite;
+  }
+
+
+  /*jahangir's moving circle*/
+  .ellipses-containerjahan {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: relative;
+    background-image: url('../images/kam.jpg');
+    transform: rotateX(90);
+    background-size: cover;
+  }
+
+  .ellipses__outer--thickjahan {
+    width: 100%;
+    height: 100%;
+    border-color: rgb(39, 3, 196) transparent;
+    border-width: 2px;
+            animation: ellipsesRotate 25s ease-in-out infinite;
+  }
+
+
+ 
+/* circle moving kayum*/
+  .ellipses-containerkay {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: relative;
+    background-image: url('../images/kayum.jpg');
+    transform: rotateX(90);
+    background-size: cover;
+  }
+
+  /* circle moving Rakib*/
+  .ellipses-containerrakib {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: relative;
+    background-image: url('../images/rakib.jpg');
+    transform: rotateX(90);
+    background-size: cover;
+  }
+
+  .ellipses {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    border-style:solid;
+  }
+
+  .ellipses__outer--thick {
+    width: 100%;
+    height: 100%;
+    border-color: #4af307 transparent #1405ec transparent;
+    border-width: 2px;
+            animation: ellipsesRotate 25s ease-in-out infinite;
+  }
+  
+  @keyframes ellipsesRotate {
+    0% {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    100% {
+      -webkit-transform: rotate(-405deg);
+              transform: rotate(-405deg);
+    }
+    
+  }
+
+ 
