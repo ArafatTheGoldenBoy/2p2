@@ -135,7 +135,25 @@ body {
     border-width: 2px;
             animation: ellipsesRotate 25s ease-in-out infinite;
   }
+@media screen and (max-width: 1205px){
+  .ellipses-containeryasin{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    position: relative;
+    background-image: url('../images/yasin1.jpg');
+    transform: rotateX(90);
+    background-size: cover;
+  }
 
+  .ellipses__outer--thickyasin {
+    width: 100%;
+    height: 100%;
+    border-color: rgb(243, 239, 7) transparent;
+    border-width: 2px;
+            animation: ellipsesRotate 25s ease-in-out infinite;
+  }
+}
 
   /*jahangir's moving circle*/
   .ellipses-containerjahan {
@@ -269,16 +287,29 @@ body, html {
   
   header .overlay{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100hv;
-    width: 100vw;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     background-color: #225470;
-    opacity: .85;
+    
+    opacity: 0.5;
     z-index: 1;
   }
 
   header .container {
     z-index: 2;
   }
-
+  @media screen and (orientation: portrait) {
+    header {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/Open-Data_1366.jpg');
+    min-height: 100%;
+    }
+    video {
+      display: none;
+    }
+  }
