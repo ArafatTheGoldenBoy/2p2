@@ -42,12 +42,13 @@
 </style>
 <body>
 <!-- Navbar (sit on top) -->
-<div>
-  <header>
-    <div  class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+  <header class="v-header">
+    <div class="fullscreen-video-wrap"> 
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="true"> 
         <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
     </video>
+  </div>
+  <div class="overlay"></div>
     <div class="container h-100">
         <div class="d-flex text-center h-100">
           <div class="my-auto w-100 text-white">
@@ -55,8 +56,9 @@
             <h2></h2>
           </div>
         </div>
-    </div>
+      </div>
   </header>
+  <div>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" id= "navexample">
         <a class="navbar-brand" href="#"><img src="images/p2plogo.png" alt="p2plogo" width="150" height="70"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,6 +90,7 @@
           </form>
         </div>
       </nav>
+      
 </div>
 
 
