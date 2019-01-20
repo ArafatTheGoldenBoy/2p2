@@ -40,19 +40,31 @@
     min-height: 400px;
   }
 </style>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <!-- Navbar (sit on top) -->
-<div>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="#"><img src="images/p2plogo.png" alt="p2plogo" width="150" height="70"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <header class="v-header">
+    <div class="fullscreen-video-wrap"> 
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="true"> 
+        <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+    </video>
+    video not supported
+    </div>
+    <div class="overlay"></div>
+    <div class="container h-100">
+        <div class="d-flex text-center h-100">
+          <div class="my-auto w-100 text-white">
+            <h1 class="display-3">2P2 IT & Co.</h1>
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+  </header>
+  <div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="images/p2plogo.png" alt="p2plogo" width="50%" height="30%"></a>
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About Us</a>
@@ -74,6 +86,7 @@
           </form>
         </div>
       </nav>
+      
 </div>
 
 
@@ -126,7 +139,7 @@
                <!-- progressbar1-->
                <div style="padding-top: 50px;">
                   <div class=""><i class="fa fa-building"></i>DOT NET</div>
-                  <div style="padding-left:80%">85%</div>
+                  <div style="width:80%; text-align: right">85%</div>
                   <div class="progress clr" style="height:1px">
                     <div class="progress-bar" style="width:85%;height:1px"></div>
                   </div>
@@ -136,7 +149,7 @@
                   <!-- progressbar2-->
                   <div>
                     <div class=""><i class="fa fa-laptop"></i>PHP</div>
-                    <div style="padding-left:65%">70%</div>
+                    <div style="width:70%; text-align: right">70%</div>
                     <div class="progress clr" style="height:1px">
                       <div class="progress-bar" style="width:70%;height:1px"></div>
                     </div>
@@ -146,7 +159,7 @@
                     <!-- progressbar3-->
                 <div>
                   <div class=""><i class="fa fa-laptop"></i>ANDROID</div>
-                  <div style="padding-left:85%">90%</div>
+                  <div  style="width:90%; text-align: right">90%</div>
                   <div class="progress clr" style="height:1px">
                     <div class="progress-bar" style="width:90%;height:1px"></div>
                   </div>
@@ -515,29 +528,19 @@
 <div>
 </div>
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+<footer class="jumbotron mt-3 pt-3" style="background-color:black">
+  
+  
+  <div class="glow">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-snapchat"></i>
+    <i class="fa fa-pinterest-p"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
   </div>
+  
   <p class="glow"> &copy; 2019 Design and Developed by 2P2 IT & Co.</p>
 </footer>
-
-<script>
-// animation for numerical number
-jQuery(document).ready(function( $ ) {
-        $('.counter').counterUp({
-            delay: 50,
-            time: 1000
-        });
-    });
-
-
-</script>
 </body>
 </html>

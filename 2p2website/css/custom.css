@@ -76,8 +76,9 @@ a {
   text-decoration: none !important;
 }
 body {
+    margin: 0%;
     font-size: 1.4rem;
-    
+    overflow-x: hidden;
   }
   
   /* =14px */
@@ -136,7 +137,25 @@ body {
     border-width: 2px;
             animation: ellipsesRotate 25s ease-in-out infinite;
   }
+@media screen and (max-width: 1205px){
+  .ellipses-containeryasin{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    position: relative;
+    background-image: url('../images/yasin1.jpg');
+    transform: rotateX(90);
+    background-size: cover;
+  }
 
+  .ellipses__outer--thickyasin {
+    width: 100%;
+    height: 100%;
+    border-color: rgb(243, 239, 7) transparent;
+    border-width: 2px;
+            animation: ellipsesRotate 25s ease-in-out infinite;
+  }
+}
 
   /*jahangir's moving circle*/
   .ellipses-containerjahan {
@@ -215,7 +234,7 @@ body {
 
 /* -- yasin -- */
 .glow {
-    font-size: 80px;
+    font-size: 3vw;
     color: #fff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -242,62 +261,61 @@ body {
 
   body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
-  height: 100%;
- /* color: #777; */ 
+  margin: 0;
+  font-size: 1rem;
   line-height: 1.8;
+  overflow-x: hidden;
 }
+  .v-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  .fullscreen-video-wrap video{
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  header .overlay{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #225470;
+    
+    opacity: 0.5;
+    z-index: 1;
+  }
 
-  header {
-    position: relative;
+  header .container {
+    z-index: 2;
+  }
+  @media screen and (orientation: portrait) {
+    header {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  header video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
+    background-image: url('../images/Open-Data_1366.jpg');
     min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-  
-  header .container {
-    position: relative;
-    z-index: 2;
-  }
-  
-  header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-  }
-  
-  @media (pointer: coarse) and (hover: none) {
-    header {
-      background: url('http://sandbox.thewikies.com/vfe-generator/images/big-buck-bunny_poster.jpg') black no-repeat center center scroll;
     }
-    header video {
+    video {
       display: none;
     }
   }
+
   
 
 
@@ -308,19 +326,6 @@ body, html {
 
 /*media query*/
 
- @media screen and (max-width:320px) {
-  .img-res{
-    
-    width: 10%;
-    height: 10%;
-    border-radius: 50%;
-  
-    background-position: center center;
-    transform: rotateX(90);
-    background-size: cover;
-  }
-
- }
 
 
 
@@ -332,4 +337,8 @@ body, html {
 
 
 
+
+.jumbotron{
+  margin: 0 !important;
+}
 
