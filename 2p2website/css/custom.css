@@ -119,13 +119,15 @@ body {
    /*Yasin's moving circle*/
 
    .ellipses-containeryasin{
-    width: 30rem;
-    height: 30rem;
+    background-image: url('../images/yasin1.jpg');
+    width: 480px;
+    height: 480px;
     border-radius: 50%;
     position: relative;
-    background-image: url('../images/yasin1.jpg');
+    background-position: center center;
     transform: rotateX(90);
     background-size: cover;
+
   }
 
   .ellipses__outer--thickyasin {
@@ -313,6 +315,30 @@ body, html {
       display: none;
     }
   }
+
+  
+
+
+
+
+
+
+
+/*media query*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 .jumbotron{
   margin: 0 !important;
 }
+
