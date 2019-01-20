@@ -1,7 +1,7 @@
 // -- counter
 jQuery(document).ready(function( $ ) {
     $('.counter').counterUp({
-        delay: 100,
+        delay: 50,
         time: 1000
     });
 });
