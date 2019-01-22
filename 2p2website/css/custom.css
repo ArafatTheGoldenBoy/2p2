@@ -83,25 +83,7 @@ a {
     border-width: 2px;
     animation: ellipsesRotate 25s ease-in-out infinite;
   }
-@media screen and (max-width: 1205px){
-  .ellipses-containeryasin{
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    position: relative;
-    background-image: url('../images/yasin1.jpg');
-    transform: rotateX(90);
-    background-size: cover;
-  }
 
-  .ellipses__outer--thickyasin {
-    width: 100%;
-    height: 100%;
-    border-color: rgb(243, 239, 7) transparent;
-    border-width: 2px;
-    animation: ellipsesRotate 25s ease-in-out infinite;
-  }
-}
 
   /*jahangir's moving circle*/
   .ellipses-containerjahan {
@@ -260,6 +242,100 @@ body, html {
       display: none;
     }
   }
+
+  @media screen and (max-width: 1205px){
+    .ellipses-containeryasin{
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      position: relative;
+      background-image: url('../images/yasin1.jpg');
+      transform: rotateX(90);
+      background-size: cover;
+    }
+  
+    .ellipses__outer--thickyasin {
+      
+      width: 100%;
+      height: 100%;
+      border-color: rgb(243, 239, 7) transparent;
+      border-width: 2px;
+      animation: ellipsesRotate 25s ease-in-out infinite;
+    }
+  }
+
+  @media screen and (max-width: 1205px){
+    .ellipses-containerjahan{
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      position: relative;
+      background-image: url('../images/kam.jpg');
+      transform: rotateX(90);
+      background-size: cover;
+    }
+  
+    .ellipses__outer--thickjahan {
+      width: 100%;
+      height: 100%;
+      border-color: rgb(39, 3, 196) transparent;
+      border-width: 2px;
+      animation: ellipsesRotate 25s ease-in-out infinite;
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+    .rev{
+      order: -1;
+    }
+  }
+
+  @media screen and (max-width: 1205px){
+    .ellipses-containerkay{
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      position: relative;
+      background-image: url('../images/kayum.jpg');
+      transform: rotateX(90);
+      background-size: cover;
+    }
+  
+    .ellipses__outer--thickkay {
+      width: 100%;
+      height: 100%;
+      border-color: rgb(35, 185, 185) transparent;
+      border-width: 2px;
+      animation: ellipsesRotate 25s ease-in-out infinite;
+    }
+  }
+
+  @media screen and (max-width: 1205px){
+    .ellipses-containerrakib{
+      width: 20rem;
+      height: 20rem;
+      border-radius: 50%;
+      position: relative;
+      background-image: url('../images/rakib.jpg');
+      transform: rotateX(90);
+      background-size: cover;
+    }
+  
+    .ellipses__outer--thickrakib {
+      width: 100%;
+      height: 100%;
+      border-color: rgb(35, 185, 185) transparent;
+      border-width: 2px;
+      animation: ellipsesRotate 25s ease-in-out infinite;
+    }
+  }
+
+  @media screen and (max-width){
+    .rev{
+      order:-1;
+    }
+  }
+  
 
   
 
