@@ -162,7 +162,6 @@ a {
 
 /* -- yasin -- */
 .glow {
-    font-size: 3vw;
     color: #fff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
