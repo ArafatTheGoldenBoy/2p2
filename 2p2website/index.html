@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<title>2P2 IT & Co.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script rel="javascript" src="js/jquery.waypoints.min.js"></script>
+<script rel="javascript" src="js/counterup.js"></script>
+<script rel="javascript" src="js/custom.js"></script>
+<style>
+  /* Create a Parallax Effect */
+ .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ /* First image (Logo. Full height) */
+ .bgimg-1 {
+    background-image: url('images/Open-Data_1366.jpg');
+    min-height: 100%;
+  }
+  
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+    background-image: url("images/Open2.jpg");
+    min-height: 400px;
+  }
+  
+  /* Third image (Contact) */
+  .bgimg-3 {
+    background-image: url("images/Open2.jpg");
+    min-height: 400px;
+  }
+</style>
+<body data-spy="scroll" data-target=".navbar" data-offset="70"  id="home">
+<!-- Navbar (sit on top) -->
+  <header class="v-header">
+    <div class="fullscreen-video-wrap"> 
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="true"> 
+      <source src="video/The Power of Computer Science - YouTube.MKV" type="video/mp4">
+    </video>
+    video not supported
+    </div>
+    <div class="overlay"></div>
+    <div class="container h-100">
+        <div class="d-flex text-center h-100">
+          <div class="my-auto w-100 text-white">
+            <h1 class="display-3 glow">2P2 IT & Co.</h1>
+            <h2></h2>
+          </div>
+        </div>
+    </div>
+  </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo 3.png" alt="p2plogo"></a>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#feature">Feature</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+<!-- Container (About Section) -->
+
+<div class="container" id="about">
+
+  <h1 class="text-center about">ABOUT US</h1>
+
+  <hr>
+
+
+  <br>
+
+  <br>
+    <!--jahangir's content start-->
+
+  <div class="row" style="padding: 10px 0px;">
+    <!-- Hide this text on small devices -->
+    <div class="col-md-6">
+      <h2 class="text-center" style="padding-top:20px;">I'm really good at:</h2>
+  
+      <!-- progressbar1-->
+      <div style="padding-top: 30px;">
+        <div class=""><i class="fa fa-laptop"></i>Web Design</div>
+        <div style="padding-left:80%">95%</div>
+        <div class="progress clr" style="height:1px">
+          <div class="progress-bar" style="width:85%;height:1px"></div>
+        </div>
+      </div>
+      <!--End progressbar1-->
+      <br>
+        <!-- progressbar2-->
+        <div>
+          <div class=""><i class="fa fa-laptop"></i>PHP</div>
+          <div style="padding-left:70%">90%</div>
+          <div class="progress clr" style="height:1px">
+            <div class="progress-bar" style="width:80%;height:1px"></div>
+          </div>
+        </div>
+        <!--End progressbar2-->
+        <br>
+          <!-- progressbar3-->
+      <div>
+        <div class=""><i class="fa fa-laptop"></i>Laravel</div>
+        <div style="padding-left:40%">40%</div>
+        <div class="progress clr" style="height:1px">
+          <div class="progress-bar" style="width:40%;height:1px"></div>
+        </div>
+      </div>
+      <!--End progressbar3-->
+    </div>
+<!--jahangir's content start-->
+
+    <div class="col-md-6 rev">
+        <div class="container__item landing-page-container">
+            <div class="content__wrapper">
+            
+                <div class="ellipses-containerjahan">
+                    <div class=" ellipses__outer--thin"> </div>
+
+                    <div class="ellipses ellipses__outer--thickjahan"></div>
+                </div>
+                <div class="text-center">
+                  <h1 class="title" style="padding:20px 0px 10px 0px;"><a class="Profile" href="https://www.facebook.com/jahangir01677">Jahangir Alam</a></h1>
+                  <h1>Founder and Chairman</h1>
+                  <h3>Web Engineer</h3>
+                </div> 
+            </div>
+
+        </div>
+      </div>
+  
+  </div>
+
+
+  <br>
+  <br>
+  <hr>
+  <!--jahangir's content End-->
+
+
+  
+  <br>
+  <br>
+  
+
+<!--rakib's content start-->
+<div class="row" style="padding: 10px 0px;">
+<div class="col-md-6 state">
+  <div class="container__item landing-page-container">
+      <div class="content__wrapper">
+      
+          <div class="ellipses-containerrakib">
+              <div class=" ellipses__outer--thin"> </div>
+
+              <div class="ellipses ellipses__outer--thick"></div>
+          </div>
+          <div class="text-center">
+            <h1 class="title" style="padding:20px 0px 10px 0px;"><a class="Profile" href="https://www.facebook.com/jahangir01677">Rakib Chowdhury</a></h1>
+            <h1>Founder and Chairman</h1>
+            <h3> Graphics Designer & Web Engineer</h3>
+          </div> 
+      </div>
+
+  </div>
+</div>
+
+    <!-- Hide this text on small devices -->
+    <div class="col-md-6">
+      <h2 class="text-center" style="padding-top:20px;">I'm really good at:</h2>
+  
+      <!-- progressbar1-->
+      <div style="padding-top: 30px;">
+        <div class=""><i class="fa fa-laptop"></i>Web Design</div>
+        <div style="padding-left:80%">95%</div>
+        <div class="progress clr" style="height:1px">
+          <div class="progress-bar" style="width:85%;height:1px"></div>
+        </div>
+      </div>
+      <!--End progressbar1-->
+      <br>
+        <!-- progressbar2-->
+        <div>
+          <div class=""><i class="fa fa-laptop"></i>PHP</div>
+          <div style="padding-left:70%">90%</div>
+          <div class="progress clr" style="height:1px">
+            <div class="progress-bar" style="width:80%;height:1px"></div>
+          </div>
+        </div>
+        <!--End progressbar2-->
+        <br>
+          <!-- progressbar3-->
+      <div>
+        <div class=""><i class="fa fa-laptop"></i>Laravel</div>
+        <div style="padding-left:40%">40%</div>
+        <div class="progress clr" style="height:1px">
+          <div class="progress-bar" style="width:40%;height:1px"></div>
+        </div>
+      </div>
+      <!--End progressbar3-->
+    </div>
+
+
+    
+  
+  </div>
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+<!--rakib content End-->
+
+  <div class="row" style="padding:10px 0px;">
+    <!--Yasin's content start-->
+        <div class="col-md-6">
+    
+            <h2 class="text-center" style="padding-top:30px;">I'm really good at:</h2>
+           <!-- progressbar1-->
+           <div style="padding-top: 50px;">
+              <div class=""><i class="fa fa-building"></i>DOT NET</div>
+              <div style="width:80%; text-align: right">85%</div>
+              <div class="progress clr" style="height:1px">
+                <div class="progress-bar" style="width:85%;height:1px"></div>
+              </div>
+            </div>
+            <!--End progressbar1-->
+            <br>
+              <!-- progressbar2-->
+              <div>
+                <div class=""><i class="fa fa-laptop"></i>PHP</div>
+                <div style="width:70%; text-align: right">70%</div>
+                <div class="progress clr" style="height:1px">
+                  <div class="progress-bar" style="width:70%;height:1px"></div>
+                </div>
+              </div>
+              <!--End progressbar2-->
+              <br>
+                <!-- progressbar3-->
+            <div>
+              <div class=""><i class="fa fa-laptop"></i>ANDROID</div>
+              <div  style="width:90%; text-align: right">90%</div>
+              <div class="progress clr" style="height:1px">
+                <div class="progress-bar" style="width:90%;height:1px"></div>
+              </div>
+            </div>
+            <!--End progressbar3-->
+          </div>
+
+          
+        <div class="col-md-6 rev">
+          <div class="container__item landing-page-container">
+              <div class="content__wrapper">
+                  <div class="ellipses-containeryasin">
+                      <div class=" ellipses__outer--thin"> </div>
+  
+                      <div class="ellipses ellipses__outer--thickyasin"></div>
+                  </div>
+                  <div class="text-center">
+                    <h1 class="title" style="padding:20px 0px 10px 0px;"><a class="Profile" href="https://www.facebook.com/md.arafat.33">Yasin Arafat</a></h1>
+                    <h1>Founder and Chairman</h1>
+                    <h3>Computer Engineer</h3>
+                  </div> 
+              </div>
+          </div>
+        </div>
+  
+        </div>
+        
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+         <!--yasin's content end-->
+        
+
+
+
+   
+
+<!--End Container (About Section) -->
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-text-black">
+  <div class="w3-row w3-center w3-padding-16"  >
+    <div class="w3-quarter w3-section">
+      <span class="counter" id = "cus-fonts1">14</span><br>
+      <p id = "cus-fonts2">Partners</p>
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="counter"id = "cus-fonts1">55</span><br>
+      <p id = "cus-fonts2">Projects Done</p>
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="counter"id = "cus-fonts1">89</span><br>
+      <p id = "cus-fonts2">Happy Clients</p>
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="counter"id = "cus-fonts1">150</span><br>
+      <p id = "cus-fonts2">Meetings</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center"><em>Here are some of our latest work.<br> Click on the images to make them bigger</em></p><br>
+  <div class="row">
+
+    <div class="col">
+      <img src="images/123.JPG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+    </div>
+    <div class="col">
+      <img src="images/123.JPG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+    </div>
+    <div class="col">
+      <img src="images/123.JPG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+    </div>
+
+    <div class="col">
+      <img src="images/123.JPG" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+    </div>
+
+  </div>
+</div>
+
+
+<!--Feature start-->
+
+
+<div class="container" id="feature">
+  <h1 class="text-center about">Feature</h1>
+  <hr>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="main-timeline2">
+              <div class="timeline">
+                  <span class="icon fa fa-globe"></span>
+                  <a href="#" class="timeline-content">
+                      <h3 class="title">Software Development</h3>
+                      <p class="description">
+                          <ul>
+                            <li>Software Architecture‎</li>
+                            <li>Software Design‎</li>
+                            <li>Software Development‎ </li>
+                            <li>Software Maintenance</li>
+                          </ul>
+                      </p>
+                  </a>
+              </div>
+              <div class="timeline">
+                  <span class="icon fa fa-rocket"></span>
+                  <a href="#" class="timeline-content">
+                      <h3 class="title">Web Development</h3>
+                      <p class="description">
+                        <ul>
+                          <li>Static & Dynamic Web Application</li>
+                          <li>Online Store or E-Commerce</li>
+                          <li>Web Application with (CMS)</li>
+                        </ul>
+                      </p>
+                  </a>
+              </div>
+              <div class="timeline">
+                  <span class="icon fa fa-briefcase"></span>
+                  <a href="#" class="timeline-content">
+                      <h3 class="title">Android Apps Development</h3>
+                      <p class="description">
+                        <ul>
+                          <li>Database Based Apps</li>
+                          <li>Notifications</li>
+                          
+                        </ul>
+                      </p>
+                  </a>
+              </div>
+              <div class="timeline">
+                  <span class="icon fa fa-mobile"></span>
+                  <a href="#" class="timeline-content">
+                      <h3 class="title">Graphic Design</h3>
+                      <p class="description">
+                        <ul>
+                          <li>BusinessCard Design</li>
+                          <li>Logo Design</li>
+                          <li>Banner Design</li>
+                          <li>Brochure Design</li>
+                          <li>Flyer Design</li>
+                          <li>T-Shirt Design</li>
+                          <li>Book Cover</li>
+                          <li>Product Design</li>
+                          <li>Poster Editing</li>
+                          <li>Video Editing</li>
+                          
+                        </ul>
+                      </p>
+                  </a>
+              </div>
+              <div class="timeline">
+                <span class="icon fa fa-mobile"></span>
+                <a href="#" class="timeline-content">
+                    <h3 class="title">Game Development</h3>
+                    <p class="description">
+                      <ul>
+                        <li>Game's UI Design</li>
+                        <li>Game's Level Design</li>
+                        <li>Unity, Unreal Engine & cry-Engine</li>
+                      </ul>
+                    </p>
+                </a>
+            </div>
+            <div class="timeline">
+              <span class="icon fa fa-mobile"></span>
+              <a href="#" class="timeline-content">
+                  <h3 class="title">Building Design & Drowing</h3>
+                  <p class="description">
+                    <ul>
+                      <li>Building Design & Drowing</li>
+                      <li>Digital Land Survey</li>
+                      <li>Soil Test</li>
+                      <li>Interior Design</li>
+                    </ul>
+                  </p>
+              </a>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+<hr>
+<!-- feature -->
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE WE WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <!--Location-->
+    <div class="w3-col m4 w3-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1826.4319527501575!2d90.43344215819056!3d23.716553596151513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9f326e4f3c3%3A0xd3715386e235e08c!2s2-point-2+IT+%26+Co.!5e0!3m2!1sen!2sbd!4v1548733550337" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> 60/10/C, Dhalpur, Jatrabari, Dhaka-1204<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 1682709516<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jykr@2-point-2.com <br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="mailto:jykr@2-point-2.com" method="post" enctype="text/plain">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<div>
+</div>
+<!-- Footer -->
+<footer class="jumbotron mt-3 pt-3" style="background-color:black">
+  
+  
+  <div class="glow" id="cus-fonts2">
+    <i class="fa fa-facebook-official"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-snapchat"></i>
+    <i class="fa fa-pinterest-p"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  
+  <p class="glow" id="cus-fonts2"> &copy; 2019 Design and Developed by 2P2 IT & Co.</p>
+</footer>
+</body>
+</html>
